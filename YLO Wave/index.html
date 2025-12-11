@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YLO Wave - Studio</title>
+    <link rel="icon" href="/image/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SEKCJA HEADER -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="image/logo.png" alt="Logo YLO Wave"
+          /></a>
+        </div>
+
+        <!-- PRZYCISK MENU ROZWIJANEGO -->
+        <button
+          class="menu-toggle"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- SEKCJA MENU -->
+        <nav class="mobile-menu">
+          <div class="logo-mobile">
+            <img src="image/logo.png" alt="Logo YLO Wave" />
+          </div>
+
+          <ul class="main-nav-list">
+            <li><a href="#main">Strona główna</a></li>
+            <li><a href="#oferta">Oferta</a></li>
+            <li><a href="#projekty">Projekty</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+
+          <!-- SEKCJA Z SOCIALAMI W MENU -->
+          <div class="social-links-mobile">
+            <a
+              href="https://www.youtube.com/@oleiy"
+              target="_blank"
+              class="social-icon youtube"
+              ><img src="image/youtube.png"
+            /></a>
+            <a
+              href="https://www.instagram.com/ylo_oleiy/"
+              target="_blank"
+              class="social-icon instagram"
+              ><img src="image/instagram.png"
+            /></a>
+            <a
+              href="https://www.tiktok.com/@ylo_oleiy"
+              target="_blank"
+              class="social-icon tiktok"
+              ><img src="image/tiktok.png"
+            /></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- SEKCJA HERO-SECTION -->
+    <section id="main" class="hero-section">
+      <div class="container hero-content">
+        <img src="image/logo.png" alt="Logo YLO Wave" class="hero-logo" />
+
+        <p class="hero-slogan">Chcesz stworzyć swój własny utwór?</p>
+
+        <a href="#oferta" class="cta-button"> SPRAWDŹ OFERTĘ </a>
+      </div>
+    </section>
+    <!-- SEKCJA OFFER-SECTION -->
+    <section class="offer-section" id="oferta">
+      <div class="container">
+        <div class="offer-grid">
+          <!-- KARTA NR 1 -->
+          <div class="offer-card full-production">
+            <div class="card-icon">🎧</div>
+            <h3>Kompleksowa Produkcja Utworu (Od A do Z)</h3>
+            <p>
+              Pomożemy ci stworzyć twój wymarzony utwór od zera. Pomożemy
+              napisać tekst, dobrać podkład i dopniemy każdy pozostały detal.
+              Idealne rozwiązanie, jeśli potrzebujesz profesjonalnego brzmienia,
+              brakuje Ci, tekstu, podkładu, aranżacji lub studia do nagrań.
+            </p>
+
+            <ul class="features-list">
+              <li>Dobór podkładu do twoich gust (Beat/Instrumental)</li>
+              <li>Realizacja i nagranie profesjonalnych wokali w studiu</li>
+              <li>Aranżacja utworu (struktura, instrumenty, efekty)</li>
+              <li>Mix i Mastering pod standardy streamingowe</li>
+            </ul>
+            <div class="price-info">
+              <p><strong>Cena:</strong> Od 800 zł / utwór</p>
+              <a href="#kontakt" class="cta-button-small"
+                >Zapytaj o szczegóły</a
+              >
+            </div>
+          </div>
+          <!-- KARTA NR 2 -->
+          <div class="offer-card mix-mastering">
+            <div class="card-icon">🎚️</div>
+            <h3>Profesjonalny Mix & Mastering</h3>
+            <p>
+              Nagrałeś już swój materiał? Zapewnimy, że Twój utwór zabrzmi
+              idealnie, gotowy do dystrybucji na wszystkich najważniejszych
+              platformach streamingowych (Spotify, Tidal, Apple Music, YouTube).
+            </p>
+            <!-- TABELA Z CENNIKIEM -->
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Usługa / Ilość ścieżek</th>
+                  <th>Cena</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Do 15 ścieżek (Mix & Master)</td>
+                  <td>300 zł</td>
+                </tr>
+                <tr>
+                  <td>Od 16 ścieżek (Mix & Master)</td>
+                  <td>500 zł</td>
+                </tr>
+                <tr>
+                  <td><strong>Mastering (tylko)</strong></td>
+                  <td>150 zł</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="price-info">
+              <p><strong>Ceny netto.</strong></p>
+              <a href="#kontakt" class="cta-button-small"
+                >Zapytaj o szczegóły</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SEKCJA PROJECTS-SECTION -->
+    <section class="projects-section" id="projekty">
+      <div class="container">
+        <h2>STWORZONE PRZEZ NAS PROJEKTY</h2>
+        <h3>
+          Poniżej prezentujemy efekty naszej pracy. Każdy z tych utworów został
+          stworzony w naszym studio od fundamentu, włączając w to pisanie
+          tekstów, produkcję oryginalnych beatów, realizację wokali oraz
+          kompleksowy Mix i Mastering. To pełna wizja zrealizowana od zera do
+          gotowego singla.
+        </h3>
+        <div class="projects-grid">
+          <!-- KARTA NR 1 -->
+          <div class="project-card">
+            <h3>Oliwier Hędrzak "21"</h3>
+            <div class="video-responsive">
+              <iframe
+                src="https://www.youtube.com/embed/_oHt_0kWHv0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="video-info">Kanał: YLO oleiy</p>
+          </div>
+          <!-- KARTA NR 2 -->
+          <div class="project-card">
+            <h3>oleiy & Marysia "Czy usłyszą mnie?"</h3>
+            <div class="video-responsive">
+              <iframe
+                src="https://www.youtube.com/embed/_XXBt_lFHGI"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="video-info">Kanał: PREZIU</p>
+          </div>
+          <!-- KARTA NR 3 -->
+          <div class="project-card">
+            <h3>Sanah "Hymn" (J.Słowacki) | Cover Marysia |</h3>
+            <div class="video-responsive">
+              <iframe
+                src="https://www.youtube.com/embed/z5e0YvfGrTA"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="video-info">Kanał: Marysia Jarosz</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SEKCJA CONTACT-SECTION -->
+    <section class="contact-section" id="kontakt">
+      <h2>SKONTAKTUJ SIĘ Z NAMI</h2>
+      <p class="contact-intro">
+        Masz pytania dotyczące produkcji utworu lub wyceny? Wypełnij formularz —
+        odpowiemy najszybciej, jak to możliwe!
+      </p>
+
+      <div class="contact-details container">
+        <div class="detail-item">
+            <p>📍 Adres Studio:</p>
+            <p>ul. Studyjna 10/5</p>
+            <p>27-004 Rzeszów, Polska</p>
+        </div>
+        <div class="detail-item">
+            <p>📞 Telefon:</p>
+            <p>+48 123 456 789</p>
+        </div>
+        <div class="detail-item">
+            <p>📧 E-mail:</p>
+            <p><a href="mailto:ylo.wavee@gmail.com">ylo.wavee@gmail.com</a></p>
+        </div>
+    </div>
+
+      <div class="container contact-container">
+        <form action="ylo.wavee@gmail.com" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Imię i Nazwisko / Nazwa Artystyczna:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jan Kowalski lub Twoja Nazwa"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adres E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@studio.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Interesująca Cię Usługa:</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Wybierz usługę</option>
+              <option value="full_production">
+                Kompleksowa Produkcja Utworu
+              </option>
+              <option value="mix_mastering">Mix & Mastering</option>
+              <option value="other">Inna / Pytanie ogólne</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Wiadomość:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Opisz swój projekt lub zadaj pytanie..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="cta-button submit-button">WYŚLIJ</button>
+        </form>
+      </div>
+    </section>
+    <!-- STOPKA -->
+    <footer class="main-footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <img src="/image/logo.png" alt="Logo YLO Wave" class="footer-logo" />
+          <p class="copyright">
+            &copy; 2025 YLO Wave Studio. Wszelkie prawa zastrzeżone.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Szybkie linki</h4>
+          <ul>
+            <li><a href="#main">Strona główna</a></li>
+            <li><a href="#oferta">Oferta</a></li>
+            <li><a href="#projekty">Projekty</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+         <h4>Kontakt</h4>
+            <p>
+                Adres Studio:<br>
+                ul. Przykładowa 10/5<br>
+                30-001 Kraków, Polska
+            </p>
+            <p>
+                Telefon: +48 123 456 789</a>
+            </p>
+            <p>
+                Email: <a href="mailto:ylo.wavee@gmail.com">ylo.wavee@gmail.com</a>
+            </p>
+
+          <div class="footer-social">
+            <a
+              href="https://www.youtube.com/@oleiy"
+              target="_blank"
+              class="social-icon youtube"
+              ><img src="/image/youtube.png" alt="YouTube"
+            /></a>
+            <a
+              href="https://www.instagram.com/ylo_oleiy/"
+              target="_blank"
+              class="social-icon instagram"
+              ><img src="/image/instagram.png" alt="Instagram"
+            /></a>
+            <a
+              href="https://www.tiktok.com/@ylo_oleiy"
+              target="_blank"
+              class="social-icon tiktok"
+              ><img src="/image/tiktok.png" alt="TikTok"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- SKRYPT W JS ZASTOSOWANY W CELU OBSŁUGI MENU NA URZĄDZENIACH MOBILNYCH -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        // Funkcja przełączająca klasę 'active'
+        const toggleMenu = () => {
+          mobileMenu.classList.toggle("active");
+          menuToggle.setAttribute(
+            "aria-expanded",
+            mobileMenu.classList.contains("active")
+          );
+        };
+
+        // Nasłuchiwanie kliknięcia ikony burgera
+        menuToggle.addEventListener("click", toggleMenu);
+
+        // Nasłuchiwanie kliknięcia na link w menu mobilnym, aby je zamknąć
+        document.querySelectorAll(".main-nav-list a").forEach((link) => {
+          link.addEventListener("click", () => {
+            if (mobileMenu.classList.contains("active")) {
+              toggleMenu();
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
