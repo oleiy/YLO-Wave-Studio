@@ -1,0 +1,57 @@
+\chapter{Opis struktury projektu}
+\label{cha:opisStrukturyProjektu}
+
+\section{Wykorzystane technologie}
+Projekt \textbf{YLO Wave - Studio} jest w całości zaimplementowany z wykorzystaniem technologii front-endowych. Wybór technologii podyktowany był koniecznością stworzenia lekkiej, szybkiej i łatwej w utrzymaniu statycznej wizytówki.
+\begin{itemize}
+    \item \textbf{HTML5:} Użyty jako główny język znaczników. Zastosowanie standardu HTML5 gwarantuje poprawną semantykę kodu, co jest niezbędne dla optymalizacji SEO (Search Engine Optimization) i ułatwia późniejsze wdrożenie na dowolnym serwerze.
+    \item \textbf{CSS3:} Wykorzystany do pełnej stylizacji interfejsu. CSS3, ze szczególnym uwzględnieniem modułów \textbf{Flexbox} i \textbf{Grid}, umożliwił stworzenie zaawansowanych, a jednocześnie responsywnych układów bez konieczności używania zewnętrznych frameworków, co minimalizuje czas ładowania strony.
+    \item \textbf{JavaScript}: Użyty w minimalnym zakresie do obsługi interakcji po stronie klienta, takich jak nawigacja mobilna.
+\end{itemize}
+
+\section{Struktura katalogów}
+Struktura katalogów została zaprojektowana w sposób modularny i zgodny z przyjętymi standardami front-endowymi, aby ułatwić zarządzanie zasobami i skalowalność projektu.
+\begin{itemize} 
+    \item \textbf{Katalog Główny (\texttt{/})}: Zawiera plik źródłowy HTML: index.html oraz arkusz stylów style.css.
+    \item \textbf{\texttt{/images}}: Dedykowany do przechowywania wszystkich zasobów graficznych, w tym zdjęć portfolio, tła oraz ikon. 
+\end{itemize}
+
+\newpage
+\section{Kodowanie i konwencje}
+\subsection*{Semantyka HTML}
+W celu zapewnienia optymalnej struktury dla czytników ekranowych i wyszukiwarek internetowych (SEO), do budowy strony wykorzystano wyłącznie semantyczne znaczniki HTML5.
+
+\begin{itemize} 
+    \item Użyto tagów strukturalnych (\texttt{<header>}, \texttt{<nav>}, \texttt{<div>}, \texttt{<section>}, \texttt{<footer>}) do logicznego podziału treści. 
+    \item Każda sekcja na stronie (np. Oferta, Kontakt) została oznaczona odpowiednim znacznikiem, co ułatwia nawigację po stronie. 
+\end{itemize}
+
+\subsection*{Organizacja CSS}
+Style zostały zorganizowane w logiczny, jeden plik CSS, co ułatwia zarządzanie regułami. Główne zasady organizacji stylów to:
+\begin{itemize} 
+    \item Wykorzystanie Flexbox i Grid: Układ strony i jej sekcji został stworzony głównie przy użyciu modułów \textbf{Flexbox} (do jednoliniowego wyrównania) oraz \textbf{CSS Grid} (do złożonych układów dwuwymiarowych), co zapewnia elastyczność i wspiera responsywność. 
+    \item Komentowanie Kodu: Kluczowe bloki kodu CSS zostały opatrzone komentarzami, aby ułatwić szybkie zlokalizowanie i modyfikację określonych sekcji. 
+\end{itemize}
+
+\subsection*{Konwencje nazewnictwa}
+W celu zapewnienia spójności i intuicyjności kodu, zastosowano jednolitą konwencję dla wszystkich nazw klas i identyfikatorów. Konwencja ta polega na użyciu wyłącznie małych liter i separowaniu słów za pomocą myślnika. Całe nazewnictwo jest prowadzone w języku angielskim, co gwarantuje wysoką czytelność kodu oraz jego zgodność z powszechnie przyjętymi standardami front-endowymi.
+
+Przykłady: \begin{itemize} 
+    \item \texttt{main-header} (dla nagłówka głównego) 
+    \item \texttt{mobile-menu} (dla menu mobilnego) 
+    \item \texttt{hero-section} (dla sekcji hero) 
+\end{itemize}
+
+\newpage
+\section{Implementacja responsywności (RWD)}
+Pełna responsywność (RWD) strony została osiągnięta wyłącznie za pomocą natywnych funkcji CSS3, bez wykorzystania zewnętrznych frameworków CSS.
+
+Strategia Desktop-First: Projekt był rozwijany z podejściem Desktop-First. Oznacza to, że podstawowe style i pełny układ strony zostały zdefiniowane najpierw dla dużych ekranów. Następnie, za pomocą zapytań medialnych (\texttt{@media queries}) wykorzystujących regułę \textbf{\texttt{max-width}}, dostosowywano i upraszczano układ dla mniejszych rozdzielczości (tabletów i urządzeń mobilnych).
+
+Punkty Przełamania (Breakpoints): Zdefiniowano kluczowe punkty przełamania, które wymuszają zmianę układu strony:
+\begin{itemize} 
+    \item \textbf{Ekran Tabletowy ($max-width: 1024px$):} Optymalizacja układu dla tabletów, np. aktywacja systemu Hamburger Menu, skalowanie grafik.
+    \item \textbf{Ekran Mobilny ($max-width: 768px$):} Pozostałe efekty skalowalności układu dla urządzeń mobilnych (tj. telefony).
+    \item Wykorzystano elastyczne jednostki miary \texttt{rem}, w celu zapewnienia płynnego skalowania interfejsu.
+\end{itemize}
+\newpage

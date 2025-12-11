@@ -1,0 +1,351 @@
+\chapter{Prezentacja warstwy użytkowej projektu}
+\label{cha:prezentacja}
+
+
+Warstwa użytkowa projektu YLO Wave - Studio została opracowana z myślą o nowoczesnej estetyce, intuicyjności oraz pełnej responsywności (RWD). Interfejs powstał przy użyciu semantycznego \textbf{HTML5}, a jego wygląd, układ i efekty wizualne zostały w pełni zdefiniowane za pomocą kaskadowych arkuszy stylów CSS3. Takie podejście umożliwiło ścisłe oddzielenie struktury treści od jej prezentacji.
+
+\section{Opis szaty graficznej interfejsu}
+Kolorystyka interfejsu została świadomie dobrana, aby odzwierciedlać profesjonalizm oraz nowoczesny, high-tech charakter Studia YLO Wave. Paleta opiera się na wysokim kontraście między ciemnym tłem a jasnymi elementami pierwszego planu, co jest charakterystyczne dla estetyki \textbf{dark mode}. Dominujące barwy zostały dobrane tak, aby budować klimat studia nagraniowego, a jednocześnie zapewniać doskonałą czytelność, przy czym kluczową rolę w identyfikacji wizualnej odgrywa kolor fioletowy, który nawiązuje do loga YLO Wave Studio.
+
+W projekcie wykorzystano następujące role kolorystyczne, bazujące na wysokim kontraście i estetyce Dark Mode:
+
+\begin{itemize}
+    \item \textbf{Kolor Tła Głównego (\texttt{--primary-color}):} \texttt{rgb(8, 1, 14)} - Głęboki, niemal czarny odcień, stanowiący bazę estetyki Dark Mode. Wykorzystany jako tło głównych sekcji strony (\texttt{body}).
+    \item \textbf{Kolor Tła Nagłówka (\texttt{--header-bg}):} \texttt{rgb(5, 1, 10)} - Minimalnie ciemniejszy odcień tła, stosowany w stałym nagłówku (\texttt{header}) oraz w tle menu mobilnego.
+    \item \textbf{Kolor Akcentujący (\texttt{--secondary-color}):} \texttt{rgb(174, 97, 216)} - Dominujący fiolet. Jest kluczowym elementem identyfikacji wizualnej. Stosowany jest do podświetlenia, cieni, ramek kart (\texttt{offer-card}, \texttt{project-card}, \texttt{contact-form}) oraz ogólnego akcentowania.
+    \item \textbf{Kolor Tekstu Głównego (\texttt{--text-color}):} \texttt{rgb(204, 197, 211)} - Jasny, neutralny odcień. Zapewnia optymalny kontrast dla tekstu głównego i linków na ciemnym tle.
+    \item \textbf{Kolor Nagłówków Sekcji:} \texttt{rgb(255, 255, 255)} - Czysta biel używana dla nagłówków sekcji oraz tytułów kart, co maksymalizuje ich widoczność.
+    \item \textbf{Kolor Akcentujący w Stanie Hover:} \texttt{rgb(190, 110, 230)} - Jaśniejszy odcień fioletu, wykorzystany w elementach interaktywnych, takich jak przyciski (\texttt{cta-button}), w stanie najechania myszą (\texttt{hover}).
+    \item \textbf{Półprzezroczyste Tło Kart:} \texttt{rgba(10, 2, 17, 0.5)} - Półprzezroczysty, bardzo ciemny odcień wykorzystywany do tworzenia kart (np. w sekcjach Oferta, Projekty, Kontakt), co zwiększa głębię wizualną.
+    \item \textbf{Cień Akcentujący:} \texttt{rgba(174, 97, 216, 0.5)} - Półprzezroczysty fiolet wykorzystywany do efektów świetlnych i cieni (np. \texttt{drop-shadow}), nawiązujących do oświetlenia *high-tech*.
+\end{itemize}
+
+Dominującą barwą akcentującą w projekcie jest fiolet (rgb(174, 97, 216)), który pełni funkcję wyróżniania elementów interaktywnych i estetycznego cieniowania, co nawiązuje do oświetlenia high-tech w studiu nagraniowym. Głęboka, prawie czarna paleta tła (rgb(8, 1, 14)) zapewnia optymalny kontrast dla jasnego tekstu (rgb(204, 197, 211)).
+
+\section{Typografia}
+Typografia w projekcie YLO Wave - Studio została oparta na jednej, spójnej rodzinie czcionek – Poppins. Wybór tej czcionki jest zgodny z estetyką high-tech i minimalizmu, ponieważ charakteryzuje się ona czystą, geometryczną budową i doskonałą czytelnością w różnych rozmiarach i wagach. Użycie pojedynczej rodziny czcionek przyczynia się również do optymalizacji szybkości ładowania strony.
+\subsection*{Hierarchia Wizualna i Wagi}
+Wykorzystanie różnych wag (ang. font-weight) czcionki Poppins pozwala na skuteczne budowanie hierarchii wizualnej i nadawanie priorytetu kluczowym elementom strony.
+\begin{itemize} 
+    \item \textbf{Nagłówki Krytyczne i CTA:} 
+        Największa waga (\texttt{font-weight: 800}) została zastosowana dla głównego przycisku Call-to-Action (\texttt{.cta-button}), aby zmaksymalizować jego widoczność i zachęcić do interakcji. 
+    \item \textbf{Nagłówki Sekcji i Kart:} 
+        Średnia waga (\texttt{font-weight: 600} – SemiBold) jest używana dla tytułów sekcji (\texttt{.hero-slogan}) oraz nagłówków wewnątrz kart (\texttt{.offer-card h3}) i etykiet formularzy. 
+    \item \textbf{Treść Główna i Linki:}    
+        Regularna waga (\texttt{font-weight: 400}) jest standardem dla całej treści opisowej, linków nawigacyjnych oraz opisów w kartach, zapewniając optymalną czytelność. 
+    \item \textbf{Treść Lekka:} 
+        Mniejsza waga wspiera czytelność w przypadku dłuższych bloków tekstu lub elementów o niższym priorytecie wizualnym. 
+\end{itemize}
+
+\newpage
+\section{Architektura HTML i Semantyka}
+\label{sec:html-architecture}
+
+Struktura projektu została zbudowana z wykorzystaniem semantycznego HTML5. Projekt jest oparty na pojedynczym pliku \texttt{index.html}, który grupuje logiczne sekcje w odpowiednich elementach semantycznych.
+
+\subsection*{Struktura Główna i Elementy Semantyczne}
+
+\begin{itemize}
+    \item \textbf{Deklaracja i Metadane (\texttt{<head>}):} Plik rozpoczyna się od standardowej deklaracji \texttt{<!DOCTYPE html>} i użycia atrybutu \texttt{lang="pl"}. Sekcja \texttt{<head>} zawiera niezbędne ustawienia techniczne:
+    \begin{itemize}
+        \item \textbf{Kodowanie (Charset):} Definiuje kodowanie znaków jako \texttt{UTF-8}, co gwarantuje poprawne wyświetlanie polskich znaków:
+        \begin{verbatim}
+<meta charset="UTF-8">
+        \end{verbatim}
+        \item \textbf{Tytuł i Favicon:} Ustawienie tytułu strony oraz ikony karty (Favicon), która wykorzystuje logo YLO Wave:
+        \begin{verbatim}
+<title>YLO Wave - Studio</title>
+<link rel="icon" href="/image/logo.png" />
+        \end{verbatim}
+        \item \textbf{Responsywność (Viewport):} Kluczowy metatag, który wymusza skalowanie strony do szerokości urządzenia:
+        \begin{verbatim}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        \end{verbatim}
+        \item \textbf{Załączenie Czcionki:} Zdefiniowanie i załączenie czcionki \textbf{Poppins} bezpośrednio z Google Fonts w celu zapewnienia spójności typograficznej.
+        \item \textbf{Załączenie Pliku CSS:} Główne style projektu są dołączone za pomocą tagu \texttt{<link>}, co separuje strukturę HTML od warstwy prezentacji:
+        \begin{verbatim}
+<link rel="stylesheet" href="style.css">
+        \end{verbatim}
+    \end{itemize}
+    \newpage
+    \item \textbf{Nagłówek Strony (\texttt{<header>}):} Zawiera główne logo (\texttt{.logo}) oraz element nawigacyjny (\texttt{<nav>}). Element \texttt{.menu-toggle} jest odpowiedzialny za aktywację i ukrywanie \textbf{Mobilnego Menu}.
+    \item \textbf{Sekcje Główne (\texttt{<section>}):} Cała treść strony (Hero, Oferta, Projekty, Kontakt) jest logicznie rozdzielona za pomocą tagu \texttt{<section>}. Każda sekcja posiada unikatowe \texttt{id} (\texttt{\#hero}, \texttt{\#offer}, \texttt{\#projects}, \texttt{\#contact}) umożliwiające płynne przewijanie (Smooth Scrolling) oraz linkowanie.
+    \item \textbf{Sekcja Hero (\texttt{\#main}):} Wykorzystuje klasę \texttt{.hero-content} do grupowania treści, co pozwoliło na przesunięcie bloku tekstowego na lewą stronę układu desktopowego, tworząc asymetrię. Zawiera główny przycisk \textbf{CTA} z klasą \texttt{.cta-button}.
+    \item \textbf{Sekcje Układów (\texttt{.offer-grid}, \texttt{.projects-grid}):} Kontenery te są bezpośrednią strukturą dla elementów \textbf{Flexbox} i \textbf{CSS Grid}, co umożliwia elastyczne rozmieszczenie kart (\texttt{.offer-card} i \texttt{.project-card}).
+    \item \textbf{Elementy Osadzone:} W sekcji Projekty wykorzystano tag \texttt{<iframe>} do osadzania filmów z YouTube, z dodatkową klasą \texttt{.video-responsive}, która gwarantuje skalowanie wideo na wszystkich urządzeniach.
+    \item \textbf{Formularz (\texttt{<form>}):} Sekcja Kontakt zawiera element \texttt{<form>} z poprawnie zdefiniowanymi elementami \texttt{<input>} oraz \texttt{<label>} dla optymalnej użyteczności.
+    \item \textbf{Stopka (\texttt{<footer>}):} Zamyka ciało dokumentu, używając semantycznego tagu \texttt{<footer>} z klasą \texttt{.footer-content}, grupując informacje o prawach autorskich, szybkich linkach i danych kontaktowych w strukturze Flexbox.
+\end{itemize}
+
+\newpage
+\section{Wykorzystane Zasoby Graficzne}
+\label{sec:graphic-assets}
+
+Projekt interfejsu wykorzystuje dedykowane zasoby graficzne, w tym elementy rastrowe (\texttt{PNG}, \texttt{JPG}) oraz wektorowe (ikony), w celu stworzenia spójnego i profesjonalnego wizerunku. Poniższe zasoby zostały wybrane w celu utrzymania estetyki \texttt{Dark Mode} i akcentującej kolorystyki fioletowej.
+
+\subsection*{Zastosowanie i pochodzenia zasobów}
+
+W katalogu \texttt{image} znajdują się następujące kluczowe zasoby, których pochodzenie jest udokumentowane w bibliografii.
+
+\begin{itemize}
+    \item \textbf{Tło Sekcji Hero (\texttt{background.png}):}
+    \begin{itemize}
+     \item \textbf{Pochodzenie:} Grafika rastrowa generowana za pomocą narzędzia AI (Google Gemini), co pozwoliło na uzyskanie unikalnego i wysokiej jakości obrazu.
+     \item \textbf{Wykorzystanie:} Stanowi główne tło wizualne strony, wspierając estetykę \texttt{Dark Mode} i jest kluczowa dla wrażenia wizualnego.
+    \end{itemize}
+
+    \item \textbf{Logo Studio YLO Wave (\texttt{logo.png}):}
+    \begin{itemize}
+     \item \textbf{Pochodzenie:} Unikatowy element graficzny wygenerowany za pomocą narzędzia AI (Google Gemini).
+     \item \textbf{Wykorzystanie:} Zapewnia branding w nagłówku strony oraz jest używane jako ikona w karcie przeglądarki (Favicon).
+     \end{itemize}
+
+    \item \textbf{Ikony Mediów Społecznościowych (\texttt{instagram.png}, \texttt{tiktok.png}, \texttt{youtube.png}):}
+    \begin{itemize}
+     \item \textbf{Pochodzenie:} Ikony platform społecznościowych oraz ikony usług pozyskane z zewnętrznego źródła (\texttt{Freepik}).
+     \item \textbf{Modyfikacja:} Wszystkie ikony zostały poddane edycji, w tym zmianie koloru na biały lub fioletowy, by zachować spójną stylistykę.
+     \item \textbf{Wykorzystanie:} Umieszczone w stopce i menu, posiadają efekt \texttt{drop-shadow} dla wizualnego wzmocnienia.
+    \end{itemize}
+\end{itemize}
+
+\newpage
+\subsection*{Wizualizacja Kluczowych Zasobów}
+
+Poniższe wizualizacje przedstawiają kluczowe zasoby graficzne użyte w projekcie: tło sekcji Hero oraz Logo Studio.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/image/background.png}
+    \caption{Prezentacja obrazu tła użytego w sekcji Hero (\texttt{.hero-section}). Grafika wygenerowana z użyciem AI.}
+    \label{fig:background}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/image/logo.png}
+    \caption{Logo YLO Wave Studio. Plik rastrowy (\texttt{logo.png}) używany do brandingu.}
+    \label{fig:logo}
+\end{figure}
+
+Z uwagi na białą kolorystykę oraz fakt, iż ikony w widoku izolowanym nie oddają w pełni ich zastosowania, zrezygnowano z ich indywidualnego przedstawienia, koncentrując się na prezentacji najważniejszych elementów wizualnych.
+
+\newpage
+\section{Architektura Layoutu}
+
+W projekcie wykorzystano architekturę opartą na jednolitym układzie centralnym, gwarantującym spójność treści. Wyjątek od tej reguły stanowi strona główna (sekcja Hero), w której zastosowano asymetryczny podział wizualny.
+
+\begin{itemize}
+    \item \textbf{Kontener Centralny (\texttt{.container}):} Cała główna treść strony jest osadzona w kontenerze o stałej szerokości \textbf{82\%} na ekranach desktopowych, co zapewnia optymalne marginesy boczne.
+    \item \textbf{Nagłówek (Header):} Zaimplementowany jako element \textbf{stały (\texttt{position: fixed})} na górze ekranu (\texttt{z-index: 1000}) w celu zapewnienia stałego dostępu do nawigacji. Wysokość nagłówka (\texttt{--header-height: 110px}) jest uwzględniona w \texttt{scroll-margin-top} dla płynnego przewijania do poszczególnych sekcji.
+    \item \textbf{Sekcja Hero:} Wykorzystuje model pełnoekranowy (\texttt{height: 100vh}) z obrazem tła i półprzezroczystą nakładką (\texttt{rgba(10, 2, 17, 0.75)}), co zwiększa kontrast tekstu. Treść jest przesunięta na lewą stronę na ekranie desktopowym.
+    \item \textbf{Układ Sekcji Kart:} Układy kart bazują na nowoczesnych technikach:
+    \begin{itemize}
+        \item \textbf{Flexbox:} Użyty w sekcji \textit{Oferta} (\texttt{.offer-grid}) do elastycznego rozmieszczenia kart w rzędzie.
+        \item \textbf{CSS Grid:} Użyty w sekcji \textit{Projekty} (\texttt{.projects-grid}) do utrzymania 3-kolumnowego układu portfolio na dużych ekranach.
+    \end{itemize}
+    \item \textbf{Stopka (Footer):} Zbudowana z użyciem \textbf{Flexbox} (\texttt{.footer-content}) w celu organizacji treści w trzy logiczne bloki: marka, nawigacja i kontakt, które są adaptowane na urządzeniach mobilnych.
+\end{itemize}
+Wszystkie powyższe elementy wizualne oraz architektura układu zostały w pełni zoptymalizowane pod kątem urządzeń mobilnych i tabletów. Pełną adaptację do różnej wielkości ekranów osiągnięto poprzez strategię Desktop-First oraz zastosowanie Media Queries, co gwarantuje pełną responsywność (RWD) projektu.
+
+\newpage
+\section{Interakcja Komponentów}
+
+Elementy interaktywne zaprojektowano w celu dostarczenia użytkownikowi czytelnych informacji, bazując na kolorze akcentującym (\texttt{--secondary-color}).
+
+\begin{itemize}
+    \item \textbf{Przyciski CTA (\texttt{.cta-button}):} Są kluczowymi elementami interaktywnymi.
+    \begin{itemize}
+        \item Posiadają wyrazisty, fioletowy kolor tła i duże zaokrąglenia (\texttt{border-radius: 20px}).
+        \item W stanie najechania myszą (\texttt{:hover}) aktywowana jest animacja: lekkie \textbf{podniesienie} (\texttt{translateY(-5px)}) i \textbf{powiększenie} (\texttt{scale(1.02)}), wzmocnione przez cień w kolorze akcentującym.
+    \end{itemize}
+    \item \textbf{Karty Sekcji (\texttt{.offer-card}, \texttt{.project-card}):}
+    \begin{itemize}
+        \item Posiadają tło z przezroczystością (\texttt{rgba(10, 2, 17, 0.5)}) oraz subtelną ramkę w kolorze fioletu.
+        \item W stanie \texttt{:hover} karta delikatnie \textbf{unosi się} (\texttt{translateY(-3px)}) i zyskuje subtelny cień akcentujący, sygnalizując interaktywność.
+    \end{itemize}
+    \item \textbf{Pola Formularza Kontaktowego:}
+    \begin{itemize}
+        \item Stan \textbf{fokusowania} (\texttt{:focus}) jest wizualnie podkreślony poprzez intensywniejszą ramkę (\texttt{border-color: var(--secondary-color)}) i cień, co sygnalizuje aktywność pola.
+    \end{itemize}
+    \item \textbf{Ikony Mediów Społecznościowych:}
+    \begin{itemize}
+        \item Wykorzystują efekt \texttt{drop-shadow} w kolorze akcentującym w stanie normalnym. Efekt ten jest wzmacniany w stanie \texttt{:hover} (\texttt{drop-shadow(0 0 5px var(--secondary-color))}), co jest spójne z ogólną estetyką.
+    \end{itemize}
+\end{itemize}
+
+Mechanizmy oparte są na subtelnych animacjach transformacji (\texttt{translateY}, \texttt{scale}) oraz wzmocnieniu efektu cienia (\texttt{box-shadow}, \texttt{drop-shadow}), które są silnie powiązane z fioletowym kolorem akcentującym (\texttt{--secondary-color}). Taki sposób wyświetlania elementów interaktywnych zwiększa intuicyjność interfejsu strony internetowej.
+
+\newpage
+\section{Implementacja Responsywności (RWD)}
+
+Wszystkie elementy interfejsu oraz architektura layoutu zostały w pełni zoptymalizowane pod kątem urządzeń mobilnych. Pełną adaptację do różnej wielkości ekranów osiągnięto poprzez strategię \textbf{Desktop-First} oraz zastosowanie \textbf{zapytań medialnych (Media Queries)}, co gwarantuje pełną responsywność (RWD) projektu.
+
+\subsection{Strategia i Zasady Projektowania RWD}
+
+\begin{itemize}
+    \item \textbf{Strategia Desktop-First:} Implementacja podstawowych stylów i pełnego układu została zdefiniowana dla dużych ekranów. Następnie, za pomocą reguły \texttt{max-width}, dostosowano i uproszczono układ dla mniejszych rozdzielczości.
+    \item \textbf{Elastyczne Jednostki:} Wykorzystano jednostki względne (\texttt{rem}, \texttt{\%}) zamiast statycznych jednostek (\texttt{px}), co wspiera naturalne, płynne skalowanie elementów.
+    \item \textbf{Optymalizacja Układu:} Główne sekcje (np. Oferta, Projekty) przechodzą z układu wielokolumnowego (Flexbox/Grid) na układ jednokolumnowy na niższych rozdzielczościach.
+\end{itemize}
+
+\subsection{Zdefiniowane Punkty Przełamania (Breakpoints)}
+
+Zdefiniowano dwa główne punkty przełamania, które wymuszają kluczowe zmiany w układzie strony:
+
+\begin{itemize}
+    \item \textbf{Punkt Przełamania (Max-width: 1280px)}
+    \begin{itemize}
+        \item \textbf{Cel:} Adaptacja do mniejszych urządzeń w orientacji poziomej.
+        \item \textbf{Kluczowa Zmiana:} Aktywacja \textbf{Mobilnego Menu} (Hamburger Menu) i ukrycie standardowej nawigacji desktopowej.
+    \end{itemize}
+    
+    \item \textbf{Punkt Przełamania (Max-width: 768px)}
+    \begin{itemize}
+        \item \textbf{Cel:} Dostosowanie do urządzeń mobilnych w orientacji pionowej.
+        \item \textbf{Układ Sekcji:} Układy wielokolumnowe (\texttt{.offer-grid}, \texttt{.projects-grid}) przechodzą na układ \textbf{jednokolumnowy} (\texttt{flex-direction: column} / \texttt{grid-template-columns: 1fr}).
+        \item \textbf{Kontenery:} Kontener główny (\texttt{.container}) przechodzi na pełną szerokość ekranu (\texttt{width: 100\%}) z dodanymi stałymi paddingami.
+        \item \textbf{Sekcja Hero:} Treść przechodzi z układu asymetrycznego (lewa strona) na układ \textbf{centralny}.
+        \item \textbf{Stopka:} Elementy stopki (\texttt{.footer-content}) zostają ułożone wertykalnie (\texttt{flex-direction: column}) i wyśrodkowane.
+    \end{itemize}
+\end{itemize}
+Responsywność projektu została osiągnięta za pomocą strategii Desktop-First, w której style bazowe definiują układ dla dużych ekranów, a adaptacje dla mniejszych urządzeń są realizowane za pomocą zapytań medialnych (\texttt{Media Queries}). Kluczowe punkty przełamania to \texttt{1280px} (aktywacja mobilnego menu) oraz \texttt{768px} (pełna rekonfiguracja układu, przejście na kolumny i centralizację treści). Zastosowanie elastycznych jednostek (\texttt{rem}) oraz dynamiczna zmiana siatki (z Flexbox/Grid na układ jednokolumnowy) gwarantuje optymalną użyteczność i czytelność na każdym urządzeniu docelowym.
+
+\section{Wizualizacja Projektu}
+Poniższe podrozdziały prezentują zrzuty ekranu kluczowych widoków strony internetowej YLO Wave - Studio, ilustrując finalny design, układ treści oraz skuteczność zastosowanej strategii responsywności (RWD).
+
+\subsection{Widok Desktopowy}
+Prezentacja pełnego układu strony zdefiniowanego dla dużych ekranów, uwzględniająca stały nagłówek, asymetrię sekcji Hero oraz wielokolumnowe układy kart i siatek.
+
+\subsubsection*{Strona główna}
+Widok prezentuje asymetryczny układ sekcji powitalnej (Hero) w rozdzielczości desktopowej. Strona utrzymana jest w estetyce Dark Mode, z dominującym fioletem akcentującym. Nagłówek jest stały (\texttt{position: fixed}), a treść i logo studia celowo przesunięto na lewą stronę układu, z wyeksponowanym przyciskiem CTA "SPRAWDŹ OFERTĘ".
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/desktop-view/strona-glowna.jpg}
+    \caption{Strona główna - widok sekcji Hero (\texttt{.hero-section}).}
+    \label{fig:HeroSection}
+\end{figure}
+
+\newpage
+\subsubsection*{Sekcja Oferta}
+Widok przedstawia dwukolumnowy układ sekcji Oferta (\texttt{.offer-grid}) w wersji desktopowej. Układ ten wykorzystuje Flexbox, w którym każda karta (\texttt{.offer-card}) jest wyeksponowana dzięki półprzezroczystemu tłu i delikatnej fioletowej ramce. Widoczne jest również zastosowanie tabeli cenowej (\texttt{.pricing-table}) w ramach karty, z nagłówkiem wyróżnionym kolorem akcentującym.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/desktop-view/oferta.jpg}
+    \caption{Prezentacja dwukolumnowego układu sekcji Oferta (\texttt{.offer-grid}).}
+    \label{fig:OfferSection}
+\end{figure}
+
+\subsubsection*{Sekcja Projekty}
+Widok prezentuje 3-kolumnowy układ siatki (\texttt{.projects-grid}) stworzony za pomocą CSS Grid, ilustrujący zrealizowane projekty studia. Każdy projekt jest osadzony w karcie (\texttt{.project-card}), która, podobnie jak karty oferty, posiada półprzezroczyste tło i fioletową ramkę. Kluczowym elementem jest implementacja responsywnych osadzonych filmów (\texttt{.video-responsive}) z platformy YouTube.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/desktop-view/projekty.jpg}
+    \caption{Prezentacja 3-kolumnowego układu sekcji Projekty (\texttt{.project-section}).}
+    \label{fig:ProjectsSection}
+\end{figure}
+
+\subsubsection*{Sekcja Kontakt}
+Widok prezentuje sekcję Kontakt, w której zaimplementowano funkcjonalny formularz. Sekcja ta jest kluczowa dla generowania zapytań klientów. Powyżej formularza umieszczono dane teleadresowe studia (adres, telefon, e-mail) w czytelny, trójkolumnowy sposób. Pola formularza mają ciemne tło, a stan focusowania (\texttt{:focus}) jest wizualnie wzmacniany, zgodnie z wcześniejszą analizą komponentów UI. Przycisk \textbf{WYŚLIJ} to kolejny element CTA utrzymany w fioletowej kolorystyce.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/desktop-view/kontakt.jpg}
+    \caption{Prezentacja sekcji Kontakt (\texttt{.contact-section}) z formularzem i danymi teleadresowymi.}
+    \label{fig:ContactSection}
+\end{figure}
+
+\subsubsection*{Stopka}
+Widok przedstawia stopkę (\texttt{.main-footer}) zorganizowaną w trzech kolumnach za pomocą Flexbox, co zapewnia czytelną separację informacji. Kolumny zawierają: \textbf{Identyfikację Marki} (logo i copyright), \textbf{Szybkie Linki} do głównych sekcji oraz \textbf{Dane Kontaktowe} wraz z ikonami mediów społecznościowych. Stopka utrzymuje estetykę Dark Mode, z subtelną ramką górną w kolorze fioletowym (\texttt{border-top}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/desktop-view/stopka.jpg}
+    \caption{Prezentacja trójkolumnowego układu stopki (\texttt{.footer-content}).}
+    \label{fig:FooterSection}
+\end{figure}
+
+\subsection{Widok Mobilny}
+\label{subsec:mobile-view}
+
+Prezentacja zoptymalizowanego układu strony na urządzeniach mobilnych o szerokości nieprzekraczającej \texttt{768px}, ukazująca przejście układu na pojedyncze kolumny oraz aktywację mobilnego menu.
+
+\subsubsection*{Strona główna - Widok Mobilny}
+Widok ilustruje rekonfigurację sekcji \textit{Hero} dla urządzeń mobilnych (\texttt{max-width: 768px}). Treść, logo i przycisk CTA zostały \textbf{wyśrodkowane}, zgodnie ze strategią RWD. Nagłówek jest uproszczony, a pełna nawigacja została zastąpiona ikoną \textbf{Hamburger Menu} (\texttt{.menu-toggle}), aktywującą menu wysuwane.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/mobile-view/strona-glowna-mobile.jpg}
+    \caption{Sekcja Hero na urządzeniu mobilnym (po centralizacji treści).}
+    \label{fig:MobileHeroSection}
+\end{figure}
+
+\newpage
+\subsubsection*{Menu Mobilne (Aktywne)}
+Wizualizacja aktywnego menu mobilnego, które uruchamiane jest po kliknięciu ikony Hamburger Menu (\texttt{.menu-toggle}). Menu jest zaimplementowane jako pełnoekranowy (\texttt{height: 100vh}) panel wysuwany (\texttt{transform: translateX(0)}), oferując dużą czcionkę dla łatwej nawigacji oraz powtórzenie linków do mediów społecznościowych.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/mobile-view/menu-mobile.jpg}
+    \caption{Widok aktywnego menu mobilnego.}
+    \label{fig:MobileMenu}
+\end{figure}
+
+\newpage
+\subsubsection*{Sekcja Oferta - Transformacja RWD}
+Widoki ilustrują kluczową transformację układu sekcji Oferta. Zgodnie z punktem przełamania \texttt{max-width: 768px}, układ kart przechodzi z poziomego (\texttt{flex-direction: row}) na \textbf{wertykalny stos} (\texttt{flex-direction: column}). Elementy wewnątrz kart (ikony, nagłówki, przyciski CTA) są centralizowane, a tabela cenowa jest skalowana, aby zachować pełną czytelność na małym ekranie.
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/mobile-view/oferta-mobile-1.jpg}
+        \caption{Pierwsza karta oferty w układzie jednokolumnowym.}
+        \label{fig:MobileOfferCard1}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/mobile-view/oferta-mobile-2.jpg}
+        \caption{Druga karta oferty (Mix \& Mastering) oraz skalowana tabela cenowa.}
+        \label{fig:MobileOfferCard2}
+    \end{minipage}
+\end{figure}
+
+\newpage
+\subsubsection*{Sekcja Projekty - Transformacja RWD}
+Widoki ilustrują transformację siatki projektów. Zgodnie z punktem przełamania, 3-kolumnowy układ Grid przechodzi na \textbf{stos kart} w jednej kolumnie. To zapewnia optymalną widoczność osadzonych filmów (\texttt{.video-responsive}) i czytelność opisów na małym ekranie. Tekst wprowadzający do sekcji również jest w pełni dostosowany do szerokości mobilnej, zapewniając odpowiednie marginesy.
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/mobile-view/projekty-mobile-1.jpg}
+        \caption{Główny tytuł sekcji i pierwsza karta projektu w widoku mobilnym.}
+        \label{fig:MobileProjectsCard1}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/mobile-view/projekty-mobile-2.jpg}
+        \caption{Kontynuacja kart projektów (układ jednokolumnowy).}
+        \label{fig:MobileProjectsCard2}
+    \end{minipage}
+\end{figure}
+
+\newpage
+\subsubsection*{Sekcja Kontakt i Stopka - Transformacja RWD}
+Widok ilustruje transformację kluczowych elementów interaktywnych i informacyjnych na urządzeniu mobilnym:
+\begin{itemize}
+    \item \textbf{Dane Kontaktowe:} Trójkolumnowy układ z danymi teleadresowymi przechodzi na \textbf{wertykalny stos} z ikonami, zwiększając czytelność.
+    \item \textbf{Formularz:} Układ formularza (\texttt{.contact-form}) zostaje przekształcony na \textbf{jednokolumnowy}. Wcześniejszy układ rzędowy dla pojedynczych pól na desktopie jest eliminowany, zapewniając pełną szerokość i łatwość wypełniania na ekranie mobilnym.
+    \item \textbf{Stopka:} Trójkolumnowa stopka (\texttt{.footer-content}) zostaje ułożona \textbf{wertykalnie} i wyśrodkowana, zapewniając spójność i dostęp do informacji prawnych oraz linków społecznościowych.
+\end{itemize}
+\newpage
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/mobile-view/kontakt-mobile-1.jpg}
+    \caption{Widok mobilny sekcji Kontakt z wertykalnym układem danych kontaktowych i formularza.}
+    \label{fig:MobileContactSection}
+\end{figure}
+
+\newpage
+\subsubsection*{Stopka - Transformacja RWD}
+Poniższy widok demonstruje finalną transformację sekcji na urządzeniach mobilnych. Trójkolumnowy układ desktopowy (\texttt{.footer-content}) został przekształcony w czytelny \textbf{stos wertykalny}. Elementy (Identyfikacja Marki, Szybkie Linki i Kontakty) są wyśrodkowane i ułożone jeden pod drugim, co zapewnia optymalny przepływ treści na małym ekranie i utrzymuje spójność estetyczną.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/mobile-view/stopka-mobile.jpg}
+    \caption{Wertykalny układ stopki (\texttt{flex-direction: column}) na urządzeniu mobilnym.}
+    \label{fig:MobileFooterSection}
+\end{figure}

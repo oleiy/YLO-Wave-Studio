@@ -1,0 +1,37 @@
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{\numberline {1}Wprowadzenie}{6}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Opis założeń projektu}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Cel Projektu}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Zakres Projektu}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Grupa Docelowa}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Wymagania Funkcjonalne}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Wymagania niefunkcjonalne}{8}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Opis struktury projektu}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Wykorzystane technologie}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Struktura katalogów}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Kodowanie i konwencje}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Implementacja responsywności (RWD)}{11}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Harmonogram realizacji projektu}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Etapy realizacji}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}System kontroli wersji i repozytorium projektu}{12}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Prezentacja warstwy użytkowej projektu}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Opis szaty graficznej interfejsu}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Typografia}{14}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Architektura HTML i Semantyka}{15}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Wykorzystane Zasoby Graficzne}{17}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Architektura Layoutu}{19}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Interakcja Komponentów}{20}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Implementacja Responsywności (RWD)}{21}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Strategia i Zasady Projektowania RWD}{21}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Zdefiniowane Punkty Przełamania (Breakpoints)}{21}{subsection.5.7.2}%
+\contentsline {section}{\numberline {5.8}Wizualizacja Projektu}{22}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Widok Desktopowy}{22}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Widok Mobilny}{25}{subsection.5.8.2}%
+\contentsline {chapter}{\numberline {6}Testowanie i Walidacja Jakości Kodu}{32}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Walidacja HTML i CSS (Zgodność ze Standardami)}{32}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Audyt Wydajności i Dostępności (Google Lighthouse)}{33}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Wyniki Audytu Wydajności (Desktop)}{33}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Wyniki Audytu Wydajności (Mobile)}{34}{subsection.6.2.2}%
+\contentsline {section}{\textbf {Bibliografia}}{36}{figure.caption.17}%
+\contentsline {section}{\textbf {Spis rysunków}}{37}{chapter*.18}%
+\contentsline {section}{\textbf {Oświadczenie studenta o samodzielności pracy}}{38}{chapter*.19}%

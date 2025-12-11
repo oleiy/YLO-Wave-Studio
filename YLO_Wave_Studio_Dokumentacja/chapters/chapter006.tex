@@ -1,0 +1,77 @@
+\chapter{Testowanie i Walidacja Jakości Kodu}
+\label{ch:testing}
+
+W celu potwierdzenia, że zrealizowany projekt \texttt{YLO Wave - Studio} spełnia wymagania funkcjonalne i niefunkcjonalne w zakresie poprawności kodu, wydajności oraz dostępności, przeprowadzono serię testów automatycznych. Testy te mają na celu udowodnienie zgodności kodu ze standardami W3C oraz zapewnienie optymalnej użyteczności.
+
+\section{Walidacja HTML i CSS (Zgodność ze Standardami)}
+\label{sec:w3c-validation}
+
+Kluczowym elementem weryfikacji jakości kodu jest jego walidacja pod kątem zgodności ze standardami World Wide Web Consortium (W3C). Walidacja potwierdza poprawność składniową i semantyczną, co jest niezbędne dla optymalnej interpretacji kodu przez przeglądarki i narzędzia dostępności. Wstępna walidacja wykazała drobne niezgodności (np. przestarzały atrybut \texttt{frameborder} oraz konieczność dodania nagłówków sekcji dla celów dostępności), które zostały skorygowane, co doprowadziło do uzyskania pełnej zgodności.
+
+\subsection*{Walidacja HTML5}
+Kod źródłowy pliku \texttt{index.html} został sprawdzony za pomocą narzędzia \texttt{W3C Markup Validation Service}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/testing/walidacja_html.jpg} 
+    \caption{Wynik końcowej walidacji kodu HTML5 dla pliku \texttt{index.html}.}
+    \label{fig:W3CHTMLValidation}
+\end{figure}
+Przeprowadzona walidacja nie wykazała błędów, potwierdzając czystość semantyczną kodu oraz jego pełną zgodność ze standardem HTML5. Usunięcie błędów dotyczących \texttt{aria-controls} i dodanie ukrytego nagłówka do sekcji \texttt{Hero} podniosło również zgodność z wytycznymi WCAG (dostępność).
+
+\newpage
+\subsection*{Walidacja CSS3}
+Arkusz stylów \texttt{style.css} został sprawdzony za pomocą narzędzia \texttt{W3C CSS Validation Service}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/testing/walidacja_css.jpg} 
+    \caption{Wynik walidacji arkusza stylów CSS3.}
+    \label{fig:W3CCSSValidation}
+\end{figure}
+Poprawna walidacja CSS3 dowodzi, że wszystkie zaimplementowane zasady, w tym moduły \texttt{Flexbox} i \texttt{Grid} odpowiedzialne za układ responsywny, są syntaktycznie poprawne.
+
+
+\section{Audyt Wydajności i Dostępności (Google Lighthouse)}
+\label{sec:lighthouse-audit}
+
+W celu weryfikacji wydajności, dostępności (A11y), zgodności z najlepszymi praktykami programistycznymi oraz optymalizacji pod kątem wyszukiwarek (SEO), przeprowadzono audyt z wykorzystaniem narzędzia \texttt{Google Lighthouse}. Testy te są kluczowe dla spełnienia wymagań niefunkcjonalnych (szybkość ładowania, responsywność).
+
+\subsection{Wyniki Audytu Wydajności (Desktop)}
+Audyt przeprowadzono w środowisku przeglądarki opartej na silniku Blink (Chromium), w trybie incognito w celu eliminacji wpływu rozszerzeń zewnętrznych. Uzyskano następujące wzorowe wyniki:
+
+\begin{itemize}
+    \item \textbf{Wydajność (Performance):} 91/100
+    \item \textbf{Dostępność (Accessibility):} 91/100
+    \item \textbf{Najlepsze Praktyki (Best Practices):} 100/100
+    \item \textbf{SEO:} 91/100
+\end{itemize}
+
+Osiągnięte wyniki potwierdzają wysoką jakość implementacji. Wynik \textbf{100/100 w Najlepszych Praktykach} świadczy o pełnej zgodności z nowoczesnymi standardami kodowania.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/testing/lighthouse_deskstop.jpg}
+    \caption{Raport Google Lighthouse dla widoku desktopowego (widoczne cztery kluczowe wskaźniki).}
+    \label{fig:LighthouseDesktop}
+\end{figure}
+
+\textbf{Uwaga: Pełne raporty HTML z audytu Lighthouse dla widoków desktopowego (\texttt{desktop\_lighthouse\_report.html}) oraz mobilnego (\texttt{mobile\_lighthouse\_report.html}) zostały umieszczone w folderze \texttt{reports/} w repozytorium GitHub projektu, dostępnym pod adresem \texttt{https://github.com/oleiy/YLO-Wave-Studio.git}.}
+
+\subsection{Wyniki Audytu Wydajności (Mobile)}
+\label{sec:lighthouse-mobile}
+Audyt powtórzono dla widoku mobilnego, symulującego środowisko sieci 3G i typowy smartfon. Ten test jest kluczowy dla weryfikacji pełnej responsywności (\texttt{RWD}). Uzyskano następujące wyniki, potwierdzające optymalizację pod kątem urządzeń mobilnych:
+
+\begin{itemize}
+    \item \textbf{Wydajność (Performance):} 92/100
+    \item \textbf{Dostępność (Accessibility):} 87/100
+    \item \textbf{Najlepsze Praktyki (Best Practices):} 100/100
+    \item \textbf{SEO:} 91/100
+\end{itemize}
+
+Wskaźniki utrzymują się w zielonej strefie, co dowodzi prawidłowego zarządzania zasobami i optymalizacji dla słabszych środowisk mobilnych.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/testing/lighthouse_mobile.jpg}
+    \caption{Raport Google Lighthouse dla widoku mobilnego.}
+    \label{fig:LighthouseMobile}
+\end{figure}
