@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.12)  11 DEC 2025 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.12)  11 DEC 2025 19:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -630,7 +630,7 @@ Package csquotes Info: Redefining alias 'default' -> 'polish'.
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count348
 \l__pdf_internal_box=\box75
-) (praca.aux (chapters/chapter001.aux) (chapters/chapter002.aux) (chapters/chapter003.aux) (chapters/chapter004.aux) (chapters/chapter005.aux) (chapters/chapter006.aux) (appendix/statement-A.aux))
+) (praca.aux (chapters/chapter001.aux) (chapters/chapter002.aux) (chapters/chapter003.aux) (chapters/chapter004.aux) (chapters/chapter005.aux) (chapters/chapter006.aux) (chapters/chapter007.aux) (appendix/statement-A.aux))
 \openout1 = `praca.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 200.
@@ -736,7 +736,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 202.
  (C:\Users\oleiy\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/ur.jpg, id=147, 134.00063pt x 134.00063pt>
+<figures/ur.jpg, id=151, 134.00063pt x 134.00063pt>
 File: figures/ur.jpg Graphic file (type jpg)
 <use figures/ur.jpg>
 Package pdftex.def Info: figures/ur.jpg  used on input line 202.
@@ -762,14 +762,17 @@ l.202 \titlepages
 \tf@toc=\write4
 \openout4 = `praca.toc'.
 
+
+Underfull \vbox (badness 1158) has occurred while \output is active []
+
  [5
 
-]
+] [6]
 \openout2 = `chapters/chapter001.aux'.
 
  (chapters/chapter001.tex
 Rozdzia\l  1.
-) [6
+) [7
 
 
 
@@ -785,27 +788,27 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 19.
  (C:\Users\oleiy\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [7
+) [8
 
 
 
 
-]) [8]
+]) [9]
 \openout2 = `chapters/chapter003.aux'.
 
  (chapters/chapter003.tex
 Rozdzia\l  3.
-[9
+[10
 
 
 
 
-] [10] [11])
+] [11] [12])
 \openout2 = `chapters/chapter004.aux'.
 
  (chapters/chapter004.tex
 Rozdzia\l  4.
-) [12
+) [13
 
 
 
@@ -815,33 +818,33 @@ Rozdzia\l  4.
 
  (chapters/chapter005.tex
 Rozdzia\l  5.
-[13
+[14
 
 
 
 
-] [14]
+] [15]
 Overfull \hbox (40.20868pt too wide) in paragraph at lines 63--63
  []\T1/pcr/m/n/10 <meta name="viewport" content="width=device-width, initial-scale=1.0">[] 
  []
 
-[15]
+[16]
 Underfull \hbox (badness 1648) in paragraph at lines 71--72
 []\T1/ptm/b/n/10 Nagªówek Strony (\T1/pcr/b/n/10 <header>\T1/ptm/b/n/10 ): \T1/ptm/m/n/10 Za-wiera gªówne logo (\T1/pcr/m/n/10 .logo\T1/ptm/m/n/10 ) oraz ele-ment na-wi-ga-cyjny
  []
 
-[16] [17]
-<figures/image/background.png, id=258, 1284.8pt x 719.68875pt>
+[17] [18]
+<figures/image/background.png, id=267, 1284.8pt x 719.68875pt>
 File: figures/image/background.png Graphic file (type png)
 <use figures/image/background.png>
 Package pdftex.def Info: figures/image/background.png  used on input line 118.
 (pdftex.def)             Requested size: 405.45047pt x 227.10947pt.
-<figures/image/logo.png, id=260, 230.5413pt x 139.4811pt>
+<figures/image/logo.png, id=269, 230.5413pt x 139.4811pt>
 File: figures/image/logo.png Graphic file (type png)
 <use figures/image/logo.png>
 Package pdftex.def Info: figures/image/logo.png  used on input line 125.
 (pdftex.def)             Requested size: 170.71393pt x 103.28674pt.
- [18 <./figures/image/background.png> <./figures/image/logo.png>] [19]
+ [19 <./figures/image/background.png> <./figures/image/logo.png>] [20]
 Underfull \hbox (badness 1521) in paragraph at lines 159--160
 []\T1/ptm/m/n/10 W sta-nie na-je-cha-nia my-sz¡ (\T1/pcr/m/n/10 :hover\T1/ptm/m/n/10 ) ak-ty-wo-wana jest ani-ma-cja: lek-kie \T1/ptm/b/n/10 pod-nie-sie-nie
  []
@@ -856,7 +859,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--173
 \T1/ptm/m/n/10 nym. Efekt ten jest wzmac-niany w sta-nie \T1/pcr/m/n/10 :hover \T1/ptm/m/n/10 (\T1/pcr/m/n/10 drop-shadow(0 0 5px
  []
 
-[20]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 205--206
 []\T1/ptm/b/n/10 Ukªad Sek-cji: \T1/ptm/m/n/10 Ukªady wie-lo-ko-lum-nowe (\T1/pcr/m/n/10 .offer-grid\T1/ptm/m/n/10 , \T1/pcr/m/n/10 .projects-grid\T1/ptm/m/n/10 )
  []
@@ -876,24 +879,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
 []\T1/ptm/b/n/10 Stopka: \T1/ptm/m/n/10 Ele-menty stopki (\T1/pcr/m/n/10 .footer-content\T1/ptm/m/n/10 ) zo-staj¡ uªo-»one wer-ty-kal-nie
  []
 
-[21]
-<figures/desktop-view/strona-glowna.jpg, id=282, 1112.35574pt x 602.25pt>
+[22]
+<figures/desktop-view/strona-glowna.jpg, id=291, 1112.35574pt x 602.25pt>
 File: figures/desktop-view/strona-glowna.jpg Graphic file (type jpg)
 <use figures/desktop-view/strona-glowna.jpg>
 Package pdftex.def Info: figures/desktop-view/strona-glowna.jpg  used on input line 223.
 (pdftex.def)             Requested size: 384.1096pt x 207.96027pt.
- [22 <./figures/desktop-view/strona-glowna.jpg>]
-<figures/desktop-view/oferta.jpg, id=288, 1391.95032pt x 752.8125pt>
+ [23 <./figures/desktop-view/strona-glowna.jpg>]
+<figures/desktop-view/oferta.jpg, id=297, 1391.95032pt x 752.8125pt>
 File: figures/desktop-view/oferta.jpg Graphic file (type jpg)
 <use figures/desktop-view/oferta.jpg>
 Package pdftex.def Info: figures/desktop-view/oferta.jpg  used on input line 233.
 (pdftex.def)             Requested size: 384.1096pt x 207.73051pt.
-<figures/desktop-view/projekty.jpg, id=289, 1391.1975pt x 751.30687pt>
+<figures/desktop-view/projekty.jpg, id=298, 1391.1975pt x 751.30687pt>
 File: figures/desktop-view/projekty.jpg Graphic file (type jpg)
 <use figures/desktop-view/projekty.jpg>
 Package pdftex.def Info: figures/desktop-view/projekty.jpg  used on input line 242.
 (pdftex.def)             Requested size: 384.1096pt x 207.4297pt.
-<figures/desktop-view/kontakt.jpg, id=290, 1390.44469pt x 1126.96031pt>
+<figures/desktop-view/kontakt.jpg, id=299, 1390.44469pt x 1126.96031pt>
 File: figures/desktop-view/kontakt.jpg Graphic file (type jpg)
 <use figures/desktop-view/kontakt.jpg>
 Package pdftex.def Info: figures/desktop-view/kontakt.jpg  used on input line 251.
@@ -901,26 +904,26 @@ Package pdftex.def Info: figures/desktop-view/kontakt.jpg  used on input line 25
 
 Underfull \vbox (badness 3098) has occurred while \output is active []
 
- [23 <./figures/desktop-view/oferta.jpg> <./figures/desktop-view/projekty.jpg>]
-<figures/desktop-view/stopka.jpg, id=297, 1391.1975pt x 341.02406pt>
+ [24 <./figures/desktop-view/oferta.jpg> <./figures/desktop-view/projekty.jpg>]
+<figures/desktop-view/stopka.jpg, id=306, 1391.1975pt x 341.02406pt>
 File: figures/desktop-view/stopka.jpg Graphic file (type jpg)
 <use figures/desktop-view/stopka.jpg>
 Package pdftex.def Info: figures/desktop-view/stopka.jpg  used on input line 260.
 (pdftex.def)             Requested size: 384.1096pt x 94.15396pt.
- [24 <./figures/desktop-view/kontakt.jpg> <./figures/desktop-view/stopka.jpg>]
-<figures/mobile-view/strona-glowna-mobile.jpg, id=304, 307.1475pt x 666.23906pt>
+ [25 <./figures/desktop-view/kontakt.jpg> <./figures/desktop-view/stopka.jpg>]
+<figures/mobile-view/strona-glowna-mobile.jpg, id=313, 307.1475pt x 666.23906pt>
 File: figures/mobile-view/strona-glowna-mobile.jpg Graphic file (type jpg)
 <use figures/mobile-view/strona-glowna-mobile.jpg>
 Package pdftex.def Info: figures/mobile-view/strona-glowna-mobile.jpg  used on input line 274.
 (pdftex.def)             Requested size: 192.0548pt x 416.59154pt.
- [25 <./figures/mobile-view/strona-glowna-mobile.jpg>]
-<figures/mobile-view/menu-mobile.jpg, id=310, 306.39468pt x 665.48625pt>
+ [26 <./figures/mobile-view/strona-glowna-mobile.jpg>]
+<figures/mobile-view/menu-mobile.jpg, id=319, 306.39468pt x 665.48625pt>
 File: figures/mobile-view/menu-mobile.jpg Graphic file (type jpg)
 <use figures/mobile-view/menu-mobile.jpg>
 Package pdftex.def Info: figures/mobile-view/menu-mobile.jpg  used on input line 284.
 (pdftex.def)             Requested size: 192.0548pt x 417.13626pt.
- [26 <./figures/mobile-view/menu-mobile.jpg>]
-<figures/mobile-view/oferta-mobile-1.jpg, id=316, 305.64188pt x 665.48625pt>
+ [27 <./figures/mobile-view/menu-mobile.jpg>]
+<figures/mobile-view/oferta-mobile-1.jpg, id=326, 305.64188pt x 665.48625pt>
 File: figures/mobile-view/oferta-mobile-1.jpg Graphic file (type jpg)
 <use figures/mobile-view/oferta-mobile-1.jpg>
 Package pdftex.def Info: figures/mobile-view/oferta-mobile-1.jpg  used on input line 296.
@@ -940,7 +943,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 297--297
 \T1/ptm/m/n/9 ukªa-dzie jed-no-ko-
  []
 
-<figures/mobile-view/oferta-mobile-2.jpg, id=317, 306.39468pt x 666.23906pt>
+<figures/mobile-view/oferta-mobile-2.jpg, id=327, 306.39468pt x 666.23906pt>
 File: figures/mobile-view/oferta-mobile-2.jpg Graphic file (type jpg)
 <use figures/mobile-view/oferta-mobile-2.jpg>
 Package pdftex.def Info: figures/mobile-view/oferta-mobile-2.jpg  used on input line 302.
@@ -965,8 +968,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 303--303
 \T1/ptm/m/n/9 ska-lo-wana ta-bela
  []
 
-[27 <./figures/mobile-view/oferta-mobile-1.jpg> <./figures/mobile-view/oferta-mobile-2.jpg>]
-<figures/mobile-view/projekty-mobile-1.jpg, id=324, 305.64188pt x 665.48625pt>
+[28 <./figures/mobile-view/oferta-mobile-1.jpg> <./figures/mobile-view/oferta-mobile-2.jpg>]
+<figures/mobile-view/projekty-mobile-1.jpg, id=333, 305.64188pt x 665.48625pt>
 File: figures/mobile-view/projekty-mobile-1.jpg Graphic file (type jpg)
 <use figures/mobile-view/projekty-mobile-1.jpg>
 Package pdftex.def Info: figures/mobile-view/projekty-mobile-1.jpg  used on input line 315.
@@ -976,7 +979,7 @@ Underfull \hbox (badness 5231) in paragraph at lines 316--316
 []\T1/ptm/b/n/9 Rys. 5.12. |\T1/ptm/m/n/9 Gªówny
  []
 
-<figures/mobile-view/projekty-mobile-2.jpg, id=325, 305.64188pt x 666.23906pt>
+<figures/mobile-view/projekty-mobile-2.jpg, id=334, 305.64188pt x 666.23906pt>
 File: figures/mobile-view/projekty-mobile-2.jpg Graphic file (type jpg)
 <use figures/mobile-view/projekty-mobile-2.jpg>
 Package pdftex.def Info: figures/mobile-view/projekty-mobile-2.jpg  used on input line 321.
@@ -991,24 +994,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--322
 \T1/ptm/m/n/9 (ukªad jed-no-ko-lum-
  []
 
-[28 <./figures/mobile-view/projekty-mobile-1.jpg> <./figures/mobile-view/projekty-mobile-2.jpg>] [29]
-<figures/mobile-view/kontakt-mobile-1.jpg, id=335, 306.39468pt x 927.465pt>
+[29 <./figures/mobile-view/projekty-mobile-1.jpg> <./figures/mobile-view/projekty-mobile-2.jpg>] [30]
+<figures/mobile-view/kontakt-mobile-1.jpg, id=344, 306.39468pt x 927.465pt>
 File: figures/mobile-view/kontakt-mobile-1.jpg Graphic file (type jpg)
 <use figures/mobile-view/kontakt-mobile-1.jpg>
 Package pdftex.def Info: figures/mobile-view/kontakt-mobile-1.jpg  used on input line 338.
 (pdftex.def)             Requested size: 192.0548pt x 581.34828pt.
- [30 <./figures/mobile-view/kontakt-mobile-1.jpg>]
-<figures/mobile-view/stopka-mobile.jpg, id=341, 304.88907pt x 537.50812pt>
+ [31 <./figures/mobile-view/kontakt-mobile-1.jpg>]
+<figures/mobile-view/stopka-mobile.jpg, id=350, 304.88907pt x 537.50812pt>
 File: figures/mobile-view/stopka-mobile.jpg Graphic file (type jpg)
 <use figures/mobile-view/stopka-mobile.jpg>
 Package pdftex.def Info: figures/mobile-view/stopka-mobile.jpg  used on input line 348.
 (pdftex.def)             Requested size: 192.0548pt x 338.59909pt.
-) [31 <./figures/mobile-view/stopka-mobile.jpg>]
+) [32 <./figures/mobile-view/stopka-mobile.jpg>]
 \openout2 = `chapters/chapter006.aux'.
 
  (chapters/chapter006.tex
 Rozdzia\l  6.
-<figures/testing/walidacja_html.jpg, id=347, 1400.98407pt x 526.21594pt>
+<figures/testing/walidacja_html.jpg, id=356, 1400.98407pt x 526.21594pt>
 File: figures/testing/walidacja_html.jpg Graphic file (type jpg)
 <use figures/testing/walidacja_html.jpg>
 Package pdftex.def Info: figures/testing/walidacja_html.jpg  used on input line 15.
@@ -1018,51 +1021,65 @@ Underfull \hbox (badness 3492) in paragraph at lines 12--18
 []\T1/ptm/m/n/10 Kod ¹ró-dªowy pliku \T1/pcr/m/n/10 index.html \T1/ptm/m/n/10 zo-staª spraw-dzony za po-moc¡ na-rz¦-dzia \T1/pcr/m/n/10 W3C Markup
  []
 
-[32
+[33
 
 
 
 
  <./figures/testing/walidacja_html.jpg>]
-<figures/testing/walidacja_css.jpg, id=353, 1390.44469pt x 657.2053pt>
+<figures/testing/walidacja_css.jpg, id=363, 1390.44469pt x 657.2053pt>
 File: figures/testing/walidacja_css.jpg Graphic file (type jpg)
 <use figures/testing/walidacja_css.jpg>
 Package pdftex.def Info: figures/testing/walidacja_css.jpg  used on input line 26.
 (pdftex.def)             Requested size: 384.1096pt x 181.5493pt.
-<figures/testing/lighthouse_deskstop.jpg, id=354, 590.205pt x 560.0925pt>
+ [34 <./figures/testing/walidacja_css.jpg>]
+<figures/testing/lighthouse_deskstop.jpg, id=369, 590.205pt x 560.0925pt>
 File: figures/testing/lighthouse_deskstop.jpg Graphic file (type jpg)
 <use figures/testing/lighthouse_deskstop.jpg>
 Package pdftex.def Info: figures/testing/lighthouse_deskstop.jpg  used on input line 52.
 (pdftex.def)             Requested size: 384.1096pt x 364.5173pt.
-
-Underfull \vbox (badness 2189) has occurred while \output is active []
-
- [33 <./figures/testing/walidacja_css.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-[]\T1/ptm/b/n/10 Uwaga: Peªne ra-porty HTML z au-dytu Li-gh-tho-use dla wi-do-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-\T1/ptm/b/n/10 ków de-sk-to-po-wego (\T1/pcr/b/n/10 desktop_lighthouse_report.html\T1/ptm/b/n/10 ) oraz mo-bil-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-\T1/ptm/b/n/10 nego (\T1/pcr/b/n/10 mobile_lighthouse_report.html\T1/ptm/b/n/10 ) zo-staªy umiesz-czone w fol-de-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-\T1/ptm/b/n/10 rze \T1/pcr/b/n/10 reports/ \T1/ptm/b/n/10 w re-po-zy-to-rium Gi-tHub pro-jektu, do-st¦p-nym pod ad-re-sem
- []
-
-<figures/testing/lighthouse_mobile.jpg, id=361, 588.69937pt x 560.0925pt>
+ [35 <./figures/testing/lighthouse_deskstop.jpg>]
+<figures/testing/lighthouse_mobile.jpg, id=375, 588.69937pt x 560.0925pt>
 File: figures/testing/lighthouse_mobile.jpg Graphic file (type jpg)
 <use figures/testing/lighthouse_mobile.jpg>
-Package pdftex.def Info: figures/testing/lighthouse_mobile.jpg  used on input line 74.
+Package pdftex.def Info: figures/testing/lighthouse_mobile.jpg  used on input line 72.
 (pdftex.def)             Requested size: 384.1096pt x 365.44885pt.
-) [34 <./figures/testing/lighthouse_deskstop.jpg>] [35 <./figures/testing/lighthouse_mobile.jpg>] (praca.bbl) [36
+)
+Underfull \hbox (badness 10000) in paragraph at lines 77--226
+[]\T1/ptm/m/n/10 Uwaga: Peªne ra-porty HTML z au-dytu Li-gh-tho-use dla wi-do-ków de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--226
+\T1/ptm/m/n/10 sk-to-po-wego (\T1/pcr/m/n/10 desktop_lighthouse_report.html\T1/ptm/m/n/10 ) oraz mo-bil-nego
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--226
+\T1/ptm/m/n/10 (\T1/pcr/m/n/10 mobile_lighthouse_report.html\T1/ptm/m/n/10 ) zo-staªy umiesz-czone w fol-de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--226
+\T1/ptm/m/n/10 rze \T1/pcr/m/n/10 reports/ \T1/ptm/m/n/10 w re-po-zy-to-rium Gi-tHub pro-jektu, do-st¦p-nym pod ad-re-sem
+ []
+
+[36 <./figures/testing/lighthouse_mobile.jpg>]
+\openout2 = `chapters/chapter007.aux'.
+
+ (chapters/chapter007.tex
+Rozdzia\l  7.
+) [37
+
+
+
+
+]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 231.
+
+(praca.bbl) [38
 
 
 
@@ -1070,7 +1087,7 @@ Package pdftex.def Info: figures/testing/lighthouse_mobile.jpg  used on input li
 \tf@lof=\write5
 \openout5 = `praca.lof'.
 
- [37
+ [39
 
 ]
 \openout2 = `appendix/statement-A.aux'.
@@ -1090,7 +1107,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-) [38
+) [40
 
 
 
@@ -1099,26 +1116,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 Package caption Warning: Unused \captionsetup[sub] on input line 23.
 See the caption package documentation for explanation.
 
-(praca.aux (chapters/chapter001.aux) (chapters/chapter002.aux) (chapters/chapter003.aux) (chapters/chapter004.aux) (chapters/chapter005.aux) (chapters/chapter006.aux) (appendix/statement-A.aux))
+(praca.aux (chapters/chapter001.aux) (chapters/chapter002.aux) (chapters/chapter003.aux) (chapters/chapter004.aux) (chapters/chapter005.aux) (chapters/chapter006.aux) (chapters/chapter007.aux) (appendix/statement-A.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `praca.out' has not changed.
-(rerunfilecheck)             Checksum: 5794D4C22D369D723836788DFDE1F59F;7012.
+(rerunfilecheck)             Checksum: D16BCF7EF902828260523A9788E83A33;7158.
  ) 
 Here is how much of TeX's memory you used:
- 23247 strings out of 474486
- 448825 string characters out of 5743755
+ 23278 strings out of 474486
+ 449865 string characters out of 5743755
  1940542 words of memory out of 5000000
- 45035 multiletter control sequences out of 15000+600000
+ 45055 multiletter control sequences out of 15000+600000
  618916 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,12n,94p,763b,1219s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on praca.pdf (36 pages, 3665974 bytes).
+Output written on praca.pdf (38 pages, 3670760 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 389 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 507 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
+ 397 words of extra memory for PDF output out of 10000 (max. 10000000)
 
