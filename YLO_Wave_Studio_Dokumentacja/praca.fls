@@ -1,6 +1,6 @@
-PWD c:\Users\oleiy\Desktop\YLO_Wave_Studio_Dokumentacja
+PWD c:\Users\oleiy\Documents\GitHub\YLO_Wave_Studio\YLO_Wave_Studio_Dokumentacja
 INPUT C:\Users\oleiy\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\oleiy\Desktop\YLO_Wave_Studio_Dokumentacja\praca.tex
+INPUT c:\Users\oleiy\Documents\GitHub\YLO_Wave_Studio\YLO_Wave_Studio_Dokumentacja\praca.tex
 OUTPUT praca.log
 INPUT .\urdpl.cls
 INPUT urdpl.cls

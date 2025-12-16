@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.12)  11 DEC 2025 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.12)  16 DEC 2025 18:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/oleiy/Desktop/YLO_Wave_Studio_Dokumentacja/praca.tex
-(c:/Users/oleiy/Desktop/YLO_Wave_Studio_Dokumentacja/praca.tex
+**c:/Users/oleiy/Documents/GitHub/YLO_Wave_Studio/YLO_Wave_Studio_Dokumentacja/praca.tex
+(c:/Users/oleiy/Documents/GitHub/YLO_Wave_Studio/YLO_Wave_Studio_Dokumentacja/praca.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (urdpl.cls *** [urdpl.cls] --- (ZG, EZ) v1.0 <19.09.2024> ***
@@ -1126,14 +1126,14 @@ Package rerunfilecheck Info: File `praca.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  23278 strings out of 474486
- 449865 string characters out of 5743755
+ 450840 string characters out of 5743755
  1940542 words of memory out of 5000000
  45055 multiletter control sequences out of 15000+600000
  618916 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,12n,94p,763b,1219s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,12n,94p,788b,1219s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/oleiy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on praca.pdf (38 pages, 3670760 bytes).
+Output written on praca.pdf (38 pages, 3670580 bytes).
 PDF statistics:
  507 PDF objects out of 1000 (max. 8388607)
  103 named destinations out of 1000 (max. 500000)
